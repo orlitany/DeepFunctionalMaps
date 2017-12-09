@@ -5,7 +5,7 @@ This page contains a TensorFlow implementation (version 1.3.0) of the method des
 
 
 ## Instructions
-* Download Data and Results folders from <todo: add google drive link>
+* Download Data and Results folders from: https://drive.google.com/drive/folders/1nHUGaKcn2INwXln6Ig354y6o9WI-_Kzj?usp=sharing
 * To run on a pair of shapes, update their filenames in test_pairs.txt
 * run test_FMnet.py
 
