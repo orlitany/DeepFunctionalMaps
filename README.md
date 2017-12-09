@@ -17,3 +17,4 @@ The network recieves as input a pair of shapes, in the format of a mat struct wi
 
 ## TODO
 * Updtae pre-trained models
+* Add postprocessing as done in the paper
