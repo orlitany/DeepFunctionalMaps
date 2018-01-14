@@ -145,7 +145,7 @@ def run_training():
 
 	print('log_dir=%s' % FLAGS.log_dir)
 	if not os.path.isdir(FLAGS.log_dir):
-		os.mkdir(FLAGS.log_dir)
+		os.makedirs(FLAGS.log_dir)
 	print('num_evecs=%d' % FLAGS.num_evecs)
 
 	print('building graph...')
