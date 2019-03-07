@@ -12,6 +12,11 @@ This page contains a TensorFlow implementation (version 1.3.0) of the method des
 ## Data description
 The network recieves as input a pair of shapes, in the format of a mat struct with precomputed shot descriptors and Laplacian eigenfunctions. See the example shapes provided in './Data/'.
 
+### Data pre-processing
+Faust models are scaled by a factor of 100. To compute SHOT descriptors, the calc_shot function was used (see data folder) with the following parameters: num_bins = 10, radius = 9, min_neighs = 3:
+calc_shot([model.X model.Y model.Z]', model.TRIV', 1:numel(model.X), num_bins, radius, min_neighs)';
+
+
 ## Pre-trained models
 * Currently we only provide a model trained for a small number of iterations (~1200) on the registered faust models. We will do our best to update this. Note that these are not the parameters used to produce the results published in the paper.  
 
